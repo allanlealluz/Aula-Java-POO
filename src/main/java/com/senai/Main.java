@@ -16,5 +16,6 @@ public class Main {
         pessoa1.endereco = endereco;
         pessoa1.endereco.EnderecoCompleto();
         pessoa1.comer("Pão");
+        System.out.println(pessoa1);
     }
 }

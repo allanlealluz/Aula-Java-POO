@@ -9,4 +9,14 @@ public class Endereco {
     public void EnderecoCompleto(){
         System.out.println(rua+" "+numeroCasa+" "+bairro+ " "+Cidade);
     }
+
+    @Override
+    public String toString() {
+        return "Endereco:" +
+                "rua='" + rua + '\'' +
+                ", bairro='" + bairro + '\'' +
+                ", numeroCasa=" + numeroCasa +
+                ", Cidade='" + Cidade + '\'' +
+                '}';
+    }
 }

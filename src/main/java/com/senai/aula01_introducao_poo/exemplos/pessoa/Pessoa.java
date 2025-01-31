@@ -11,4 +11,14 @@ public class Pessoa {
     }
 
     public void comer(String alimento){System.out.println("Comendo "+alimento);}
+
+    @Override
+    public String toString() {
+        return "o " +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", altura=" + altura +
+                ", endereco=" + endereco +
+                '}';
+    }
 }
