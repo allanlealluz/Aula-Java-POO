@@ -15,5 +15,6 @@ public class Main {
                              "Allan");
         pessoa1.comer("Pão");
         System.out.println(pessoa1);
+        pessoa1.falar("dale");
     }
 }

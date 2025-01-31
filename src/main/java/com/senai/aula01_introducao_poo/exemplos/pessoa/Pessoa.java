@@ -14,10 +14,10 @@ public class Pessoa {
     }
 
     public void falar(String frase){
-        System.out.println(frase);
+        System.out.println(this.nome + ":" + frase);
     }
 
-    public void comer(String alimento){System.out.println("Comendo "+alimento);}
+    public void comer(String alimento){System.out.println(this.nome + " está comendo "+alimento);}
 
     @Override
     public String toString() {
