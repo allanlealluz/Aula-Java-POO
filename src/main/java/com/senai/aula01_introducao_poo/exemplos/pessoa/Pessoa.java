@@ -6,6 +6,13 @@ public class Pessoa {
     public float altura;
     public Endereco endereco;
 
+    public Pessoa(Endereco endereco, float altura, int idade, String nome) {
+        this.endereco = endereco;
+        this.altura = altura;
+        this.idade = idade;
+        this.nome = nome;
+    }
+
     public void falar(String frase){
         System.out.println(frase);
     }
@@ -19,6 +26,6 @@ public class Pessoa {
                 ", idade=" + idade +
                 ", altura=" + altura +
                 ", endereco=" + endereco +
-                '}';
+                "\t";
     }
 }

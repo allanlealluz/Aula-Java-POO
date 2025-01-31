@@ -6,6 +6,13 @@ public class Endereco {
     public int numeroCasa;
     public String Cidade;
 
+    public Endereco(String bairro, String rua, int numeroCasa, String cidade) {
+        this.bairro = bairro;
+        this.rua = rua;
+        this.numeroCasa = numeroCasa;
+        Cidade = cidade;
+    }
+
     public void EnderecoCompleto(){
         System.out.println(rua+" "+numeroCasa+" "+bairro+ " "+Cidade);
     }
@@ -17,6 +24,6 @@ public class Endereco {
                 ", bairro='" + bairro + '\'' +
                 ", numeroCasa=" + numeroCasa +
                 ", Cidade='" + Cidade + '\'' +
-                '}';
+                " \t";
     }
 }
