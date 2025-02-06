@@ -4,13 +4,15 @@ public class Carro {
     String marca;
     int ano;
     String modelo;
+    String cor;
     float motor;
     float preco;
 
-    public Carro(int ano, String marca, String modelo, float motor, float preco) {
+    public Carro(int ano, String marca, String modelo,String cor, float motor, float preco) {
         this.ano = ano;
         this.marca = marca;
         this.modelo = modelo;
+        this.cor = cor;
         this.motor = motor;
         this.preco = preco;
     }
@@ -21,6 +23,7 @@ public class Carro {
                 "marca='" + marca + '\'' +
                 ", ano=" + ano +
                 ", modelo='" + modelo + '\'' +
+                ", cor='" + cor + '\'' +
                 ", motor=" + motor +
                 ", preco=" + preco +
                 '}';
