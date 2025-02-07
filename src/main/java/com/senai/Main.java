@@ -34,12 +34,7 @@ public class Main {
             System.out.println(etiqueta[i]);
             dados[i] = scanner.nextLine();
         }
-        Pessoa pessoa3  = new Pessoa(
-                new Endereco(
-                      dados[1],
-                ),
-                dados[0],
-        );
+
     }
 
 
