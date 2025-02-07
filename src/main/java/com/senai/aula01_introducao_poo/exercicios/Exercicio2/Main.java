@@ -20,7 +20,7 @@ public class Main {
         }
         Aluno aluno3 = new Aluno("Bryan",17,8.4f);
         aluno3.exibirInformacoes();
-        aluno3.atualizarNota(1.8f);
+        aluno3.atualizarNota(1.4f);
         if(aluno3.verificaAprovacao()){
             System.out.println("Parabéns aluno aprovado");
         }else{
