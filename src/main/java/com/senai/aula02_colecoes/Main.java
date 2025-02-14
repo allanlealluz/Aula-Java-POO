@@ -53,7 +53,7 @@ public class Main {
         listaPessoas.add(0,pessoa3);
         listar(listaPessoas);
         listaPessoas.forEach(System.out::println);
-        List<Pessoa> listaFiltrada = listaPessoas.stream().filter(pessoat -> pessoat.idade >= 10).toList();
+        List<Pessoa> listaFiltrada = listaPessoas.stream().filter(p -> p.idade >= 10).toList();
         System.out.println("Lista filtrada");
         listaFiltrada.forEach(System.out::println);
     }
