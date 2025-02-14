@@ -51,7 +51,7 @@ public class Main {
 
         listaPessoas.add(0,pessoa3);
         listar(listaPessoas);
-
+        listaPessoas.forEach(System.out::println);
 
     }
 
