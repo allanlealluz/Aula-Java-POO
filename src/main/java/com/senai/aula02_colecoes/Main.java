@@ -1,5 +1,7 @@
 package com.senai.aula02_colecoes;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         Pessoa pessoa1 = new Pessoa(36,"Rafael");
@@ -19,5 +21,19 @@ public class Main {
         matrizPessoas[3] = new Pessoa(43,"Helena");
         System.out.println(matrizPessoas[3].nome);
 
+        ArrayList lista = new ArrayList();
+
+        lista.add(12);
+        lista.add(true);
+        lista.add("teste");
+        lista.add(pessoa1);
+
+        Pessoa pessoa = (Pessoa) lista.get(3);
+        pessoa.falar("teste");
+
+        ArrayList<Pessoa> listaPessoas = new ArrayList();
+
+        listaPessoas.add(pessoa1);
+        listaPessoas.add(new Pessoa(19, "Gabriel"));
     }
 }
