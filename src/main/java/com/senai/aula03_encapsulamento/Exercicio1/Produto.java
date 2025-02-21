@@ -1,4 +1,4 @@
-package com.senai.aula03_encapsulamento;
+package com.senai.aula03_encapsulamento.Exercicio1;
 
 public class Produto {
     private String nome;
