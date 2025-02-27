@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        ContaBancaria contaBancaria  = new ContaBancaria("Allan",15000);
+        ContaBancaria contaBancaria  = new ContaBancaria("Allan",-5000);
         Scanner scanner = new Scanner(System.in);
         int opt = 0;
         while(opt != 3){

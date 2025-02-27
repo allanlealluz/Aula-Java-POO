@@ -1,9 +1,17 @@
-package com.senai.aula03_encapsulamento;
+package com.senai.aula03_encapsulamento.Exercicio3;
+
+import java.util.ArrayList;
 
 public class Funcionarios {
     String nome;
     double salario;
     String cargo;
+
+    public Funcionarios(String nome, double salario, String cargo, ArrayList cargos_possiveis) {
+        this.nome = nome;
+        this.salario = salario;
+        this.cargo = cargo;
+    }
 
     public String getNome() {
         return nome;
@@ -18,7 +26,12 @@ public class Funcionarios {
     }
 
     public void setNome(String nome) {
-        this.nome = nome;
+        if(!nome.isEmpty()){
+            this.nome = nome;
+        }else{
+            throw new IllegalArgumentException("Nome não pode ser nulo");
+        }
+
     }
 
     public void setSalario(double salario) {
@@ -30,8 +43,13 @@ public class Funcionarios {
 
     }
 
-    public void setCargo(String cargo) {
-        this.cargo = cargo;
+    public void setCargo(String cargo,ArrayList cargos_possiveis) {
+        if(cargos_possiveis.contains(cargo)){
+            this.cargo = cargo;
+        }else{
+            throw new IllegalArgumentException("Cargo invalido");
+        }
+
     }
 
 }

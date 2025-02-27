@@ -4,8 +4,8 @@ public class ContaBancaria {
     String titular;
     double saldo;
     public ContaBancaria(String titular, double saldo) {
-        this.titular = titular;
-        this.saldo = saldo;
+        setTitular(titular);
+        setSaldo(saldo);
     }
     public void Depositar(double valor){
         if(valor > 0){
@@ -33,6 +33,11 @@ public class ContaBancaria {
     }
 
     public void setSaldo(double saldo) {
-        this.saldo = saldo;
+        if(saldo > 0) {
+            this.saldo = saldo;
+        }else{
+            System.out.println("Saldo negativo");
+            throw new IllegalArgumentException("Errro de negativo");
+        }
     }
 }
