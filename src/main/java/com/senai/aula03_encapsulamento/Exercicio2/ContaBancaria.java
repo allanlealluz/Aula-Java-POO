@@ -9,7 +9,14 @@ public class ContaBancaria {
     }
     public void Depositar(double valor){
         if(valor > 0){
-
+            setSaldo(saldo + valor);
+        }
+    }
+    public void sacar(double valor){
+        if(valor <= getSaldo()){
+            setSaldo(saldo - valor);
+        }else{
+            System.out.println("Saldo insuficiente");
         }
     }
 
@@ -19,5 +26,13 @@ public class ContaBancaria {
 
     public double getSaldo() {
         return saldo;
+    }
+
+    public void setTitular(String titular) {
+        this.titular = titular;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
 }
