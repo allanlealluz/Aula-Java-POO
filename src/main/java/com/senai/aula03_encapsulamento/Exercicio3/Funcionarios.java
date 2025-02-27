@@ -8,9 +8,9 @@ public class Funcionarios {
     String cargo;
 
     public Funcionarios(String nome, double salario, String cargo, ArrayList cargos_possiveis) {
-        this.nome = nome;
-        this.salario = salario;
-        this.cargo = cargo;
+        setNome(nome);
+        setSalario(salario);
+        setCargo(cargo,cargos_possiveis);
     }
 
     public String getNome() {
