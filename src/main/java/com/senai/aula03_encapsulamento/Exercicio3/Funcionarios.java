@@ -3,9 +3,9 @@ package com.senai.aula03_encapsulamento.Exercicio3;
 import java.util.ArrayList;
 
 public class Funcionarios {
-    String nome;
-    double salario;
-    String cargo;
+    private String nome;
+    private double salario;
+    private String cargo;
 
     public Funcionarios(String nome, double salario, String cargo, ArrayList cargos_possiveis) {
         setNome(nome);
@@ -49,6 +49,11 @@ public class Funcionarios {
         }else{
             throw new IllegalArgumentException("Cargo invalido");
         }
+
+    }
+    public void aumentarSalario(double salarioini, double salarioAumentado){
+        System.out.println("O percentual de aumento é de " + (salarioAumentado * 100) / salarioini + "%");
+        setSalario(salarioini + salarioAumentado);
 
     }
 

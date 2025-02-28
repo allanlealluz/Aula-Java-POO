@@ -15,10 +15,10 @@ public class Main {
         int opt = 0;
         while(opt != 4){
             System.out.println("Sistema de cadastro de novos funcionários");
-            System.out.println("Escolha uma opção" +
-                    "1 - Cadastrar funcionário" +
-                    "2 - Aumentar salario" +
-                    "3 - exibir funcionarios" +
+            System.out.println("Escolha uma opção \n" +
+                    "1 - Cadastrar funcionário \n" +
+                    "2 - Aumentar salario \n" +
+                    "3 - exibir funcionarios \n" +
                     "4 - sair");
             opt = scanner.nextInt();
             switch (opt){
@@ -33,8 +33,31 @@ public class Main {
                     funcionario.add(new Funcionarios(nome,salario,cargo,cargos_possiveis));
                     break;
                 case 2:
+                    System.out.println("Aumentar salario: ");
+                    System.out.println("Qual o nome do funcionário: ");
+                    String nomefunc = scanner.next();
+                    System.out.println("Qual o aumento no salário dele: ");
+                    double newsalario = scanner.nextDouble();
+                    for( Funcionarios fuds: funcionario){
+                        if(fuds.getNome().equals(nomefunc)){
+                            fuds.aumentarSalario(fuds.getSalario(),newsalario);
+                        }else{
+                            System.out.println("Funcionario não encontrado");
+                        }
+                    }
                     break;
                 case 3:
+                    System.out.println("Qual o nome do funcionário: ");
+                    String nomefunc2 = scanner.next();
+                    for(Funcionarios func : funcionario){
+                        if(func.getNome().equals(nomefunc2)){
+                            System.out.println("Funcionario: "+func.getNome()+"\n");
+                            System.out.println("E ele ganha "+func.getSalario());
+
+                        }else{
+                            System.out.println("Funcionario não encontrado");
+                }
+                    }
                     break;
                 case 4:
                     break;
