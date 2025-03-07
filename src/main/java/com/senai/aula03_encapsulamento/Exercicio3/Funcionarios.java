@@ -1,5 +1,6 @@
 package com.senai.aula03_encapsulamento.Exercicio3;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 
 public class Funcionarios {
@@ -38,7 +39,9 @@ public class Funcionarios {
         if(salario > 1.320){
             this.salario = salario;
         }else{
-            throw new IllegalArgumentException("O salario deve superar R$1.320,00");
+            System.out.println("O salario deve ser maior que R$1.320,00");
+            System.out.println("O campo será preenchido com R$1.320,00");
+            this.salario = 1320;
         }
 
     }
