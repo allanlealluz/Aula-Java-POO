@@ -7,19 +7,6 @@ public class ContaBancaria {
         setTitular(titular);
         setSaldo(saldo);
     }
-    public void Depositar(double valor){
-        if(valor > 0){
-            setSaldo(saldo + valor);
-        }
-    }
-    public void sacar(double valor){
-        if(valor <= getSaldo()){
-            setSaldo(saldo - valor);
-        }else{
-            System.out.println("Saldo insuficiente");
-        }
-    }
-
     public String getTitular() {
         return titular;
     }
@@ -40,4 +27,21 @@ public class ContaBancaria {
             throw new IllegalArgumentException("Errro de negativo");
         }
     }
+    public void Depositar(double valor){
+        if(valor > 0){
+            setSaldo(saldo + valor);
+        }
+    }
+    public void sacar(double valor){
+        if(valor <= getSaldo()){
+            setSaldo(saldo - valor);
+        }else{
+            System.out.println("Saldo insuficiente");
+        }
+    }
+    public void transferir(double valor, ContaBancaria contadestino){
+        this.sacar(valor);
+        contadestino.Depositar(valor);
+    }
+
 }

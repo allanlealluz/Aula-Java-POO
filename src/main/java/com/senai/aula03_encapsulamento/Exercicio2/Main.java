@@ -4,12 +4,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        ContaBancaria contaBancaria  = new ContaBancaria("Allan",-5000);
+        ContaBancaria contaBancaria  = new ContaBancaria("Allan",5000);
+        ContaBancaria contaBancaria2  = new ContaBancaria("Bruno",3000);
         Scanner scanner = new Scanner(System.in);
         int opt = 0;
-        while(opt != 3){
+        while(opt != 4){
             System.out.println("Sistema bancário.\n");
-            System.out.println("Digite 1 para depositar, 2 para sacar e 3 para sair do sistema");
+            System.out.println("Digite 1 para depositar, 2 para sacar, 3 para transferir e 4 para sair do sistema");
             opt = scanner.nextInt();
             switch(opt){
                 case 1:
@@ -23,6 +24,12 @@ public class Main {
                     System.out.println("Agora você possui "+contaBancaria.getSaldo()+" reais");
                     break;
                 case 3:
+                    System.out.println("Tranferindo para uma conta");
+                    contaBancaria.transferir(250,contaBancaria2);
+                    System.out.println("Agora você tem "+ contaBancaria.getSaldo());
+                    System.out.println("E o destinario tem "+contaBancaria2.getSaldo());
+                    break;
+                case 4:
                     System.out.println("SAINDO");
                     break;
                 default:
