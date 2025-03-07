@@ -32,16 +32,19 @@ public class ContaBancaria {
             setSaldo(saldo + valor);
         }
     }
-    public void sacar(double valor){
-        if(valor <= getSaldo()){
+    public boolean sacar(double valor){
+        if(valor <= saldo && valor > 0){
             setSaldo(saldo - valor);
+            return true;
         }else{
             System.out.println("Saldo insuficiente");
+            return false;
         }
     }
     public void transferir(double valor, ContaBancaria contadestino){
-        this.sacar(valor);
-        contadestino.Depositar(valor);
+        if(this.sacar(valor)) {
+            contadestino.Depositar(valor);
+        }
     }
 
 }

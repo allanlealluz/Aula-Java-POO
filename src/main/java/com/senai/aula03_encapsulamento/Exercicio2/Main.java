@@ -25,7 +25,7 @@ public class Main {
                     break;
                 case 3:
                     System.out.println("Tranferindo para uma conta");
-                    contaBancaria.transferir(250,contaBancaria2);
+                    contaBancaria.transferir(5550,contaBancaria2);
                     System.out.println("Agora você tem "+ contaBancaria.getSaldo());
                     System.out.println("E o destinario tem "+contaBancaria2.getSaldo());
                     break;
