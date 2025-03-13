@@ -1,4 +1,4 @@
-package com.senai.aula04_herenca.exemplos.funcionario;
+package com.senai.aula04_herenca.exemplos.gerenciamentocadastrofunc.funcionario;
 
 public class Gerente extends Funcionario {
     private double bonus;

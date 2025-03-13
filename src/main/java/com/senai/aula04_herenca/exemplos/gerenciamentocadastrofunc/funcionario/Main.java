@@ -1,4 +1,4 @@
-package com.senai.aula04_herenca.exemplos.funcionario;
+package com.senai.aula04_herenca.exemplos.gerenciamentocadastrofunc.funcionario;
 
 public class Main {
     public static void main(String[] args) {
