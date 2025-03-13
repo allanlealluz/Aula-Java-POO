@@ -26,6 +26,6 @@ public class Funcionario {
     }
 
     public void exibirInformacoes(){
-        System.out.printf("nome do funcionario: %s, salario R$%f",nome,salario);
+        System.out.printf("nome do funcionario: %s, salario R$%,.2f",nome,salario);
     }
 }
