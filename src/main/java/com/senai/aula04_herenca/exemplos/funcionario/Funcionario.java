@@ -2,9 +2,9 @@ package com.senai.aula04_herenca.exemplos.funcionario;
 
 public class Funcionario {
     private String nome;
-    private Double salario;
+    private double salario;
 
-    public Funcionario(String nome, Double salario) {
+    public Funcionario(String nome, double salario) {
         this.nome = nome;
         this.salario = salario;
     }
@@ -26,6 +26,6 @@ public class Funcionario {
     }
 
     public void exibirInformacoes(){
-        System.out.printf("nome do funcionario: %s, salario R$%,.2f",nome,salario);
+        System.out.printf("nome do funcionario: %s, salario R$%,.2f \n",nome,salario);
     }
 }

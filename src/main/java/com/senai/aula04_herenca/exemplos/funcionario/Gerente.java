@@ -3,7 +3,7 @@ package com.senai.aula04_herenca.exemplos.funcionario;
 public class Gerente extends Funcionario {
     private double bonus;
 
-    public Gerente(String nome, Double salario, double bonus) {
+    public Gerente(String nome, double salario, double bonus) {
         super(nome, salario);
         this.bonus = bonus;
     }
@@ -18,6 +18,6 @@ public class Gerente extends Funcionario {
 
     @Override
     public void exibirInformacoes() {
-        System.out.printf("nome: %s, salario R$%,.2f",getNome(),getSalario());
+        System.out.printf("nome: %s, salario R$%,.2f \n",getNome(),getSalario()+bonus);
     }
 }
