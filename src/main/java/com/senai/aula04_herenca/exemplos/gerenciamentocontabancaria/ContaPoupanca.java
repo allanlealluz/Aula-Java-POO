@@ -11,4 +11,12 @@ public class ContaPoupanca extends ContaBancaria {
         saldo += (saldo * taxaRendimento)/100;
         //
     }
+
+    public double getTaxaRendimento() {
+        return taxaRendimento;
+    }
+
+    public void setTaxaRendimento(double taxaRendimento) {
+        this.taxaRendimento = taxaRendimento;
+    }
 }
