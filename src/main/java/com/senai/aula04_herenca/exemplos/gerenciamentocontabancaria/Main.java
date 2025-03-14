@@ -16,7 +16,6 @@ public class Main {
             System.out.println("saque realizado");
         }
         System.out.println("\n____Aplicando investimento _____\n");
-        contaPoupanca.aplicarRendimento();
         System.out.println(contaPoupanca.getSaldo());
     }
 }
