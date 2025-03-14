@@ -5,7 +5,7 @@ public class ContaBancaria {
     protected double saldo;
     public ContaBancaria(String titular, double saldo) {
         setTitular(titular);
-        setSaldo(saldo);
+        this.saldo = saldo;
     }
     public String getTitular() {
         return titular;
@@ -19,22 +19,14 @@ public class ContaBancaria {
         this.titular = titular;
     }
 
-    public void setSaldo(double saldo) {
-        if(saldo > 0) {
-            this.saldo = saldo;
-        }else{
-            System.out.println("Saldo negativo");
-            throw new IllegalArgumentException("Errro de negativo");
-        }
-    }
     public void Depositar(double valor){
         if(valor > 0){
-            setSaldo(saldo + valor);
+            this.saldo = saldo + valor;
         }
     }
     public boolean sacar(double valor){
         if(valor <= saldo && valor > 0){
-            setSaldo(saldo - valor);
+            this.saldo = saldo - valor;
             return true;
         }else{
             System.out.println("Saldo insuficiente");
