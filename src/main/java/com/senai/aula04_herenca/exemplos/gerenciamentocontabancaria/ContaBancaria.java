@@ -5,7 +5,7 @@ public class ContaBancaria {
     protected double saldo;
     public ContaBancaria(String titular, double saldo) {
         setTitular(titular);
-        this.saldo = saldo;
+        setSaldo(saldo);
     }
     public String getTitular() {
         return titular;
@@ -17,6 +17,14 @@ public class ContaBancaria {
 
     public void setTitular(String titular) {
         this.titular = titular;
+    }
+
+    public void setSaldo(double saldo){
+        if(saldo >0){
+            this.saldo = saldo;
+        }else{
+            throw new IllegalArgumentException("Erro");
+        }
     }
 
     public void Depositar(double valor){
