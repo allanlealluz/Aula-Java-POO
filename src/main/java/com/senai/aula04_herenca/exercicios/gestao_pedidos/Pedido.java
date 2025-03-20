@@ -24,4 +24,9 @@ public class Pedido {
     public void setValorPedido(double valorPedido) {
         this.valorPedido = valorPedido;
     }
+
+    public void exibirDetalhes() {
+        System.out.println("Número do Pedido: " + numeroPedido);
+        System.out.println("Valor do Pedido: R$" + valorPedido);
+    }
 }

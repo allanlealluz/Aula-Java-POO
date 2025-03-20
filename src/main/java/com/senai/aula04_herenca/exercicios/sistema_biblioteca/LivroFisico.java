@@ -10,8 +10,8 @@ public class LivroFisico extends Livro {
 
     @Override
     public String toString() {
-        return "LivroFisico{" +
-                " numpags= " + numpags +
-                '}';
+        return "autor: " + getAutor() +
+                " numpags: " + numpags + " titulo: "+
+                getTitulo();
     }
 }

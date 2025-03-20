@@ -25,4 +25,12 @@ public class PedidoOnline extends Pedido {
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
+
+    @Override
+    public void exibirDetalhes() {
+        super.exibirDetalhes();
+        System.out.println("Taxa de Entrega: R$" + taxaEntrega);
+        System.out.println("Endereço de Entrega: " + endereco);
+        System.out.println("Valor Total (incluindo entrega): R$" + (getValorPedido() + taxaEntrega));
+    }
 }

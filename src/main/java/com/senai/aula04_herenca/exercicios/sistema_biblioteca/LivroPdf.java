@@ -10,8 +10,8 @@ public class LivroPdf extends Livro {
 
     @Override
     public String toString() {
-        return "LivroPdf{" +
-                "tamanhoArquivo=" + tamanhoArquivo +
-                '}';
+        return "autor: " + getAutor() +
+                " tamanho arquivo: " + tamanhoArquivo + " titulo: "+
+                getTitulo();
     }
 }
