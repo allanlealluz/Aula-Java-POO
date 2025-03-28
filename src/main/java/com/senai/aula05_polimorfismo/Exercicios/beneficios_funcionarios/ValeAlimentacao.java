@@ -8,3 +8,4 @@ public class ValeAlimentacao extends Beneficio {
         this.valor = valor;
     }
 }
+// testa
