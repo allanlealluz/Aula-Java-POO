@@ -1,4 +1,4 @@
-package com.senai.aula006_abstracao.Exemplo.aparelho_eletronico;
+package com.senai.aula006_abstracao.Exemplo_interface.aparelho_eletronico;
 
 public class Televisao implements AparelhoEletronico{
     @Override
